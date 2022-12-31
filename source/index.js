@@ -4,7 +4,6 @@ import path from "path"
 import "./db"
 import morgan from "morgan";
 
-import { PORT } from "./config";
 
 /*
 This Import is used to try the another way to config hbs
@@ -24,7 +23,7 @@ import indexRoutes from "./routes/index";
 
 //Settings
 
-app.set("port", PORT);
+app.set("port", 3000);
 
 app.set('views', path.join(__dirname,'views'))
 
