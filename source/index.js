@@ -16,6 +16,8 @@ const app = express();
 //const session = require('express-session')
 import indexRoutes from "./routes/index";
 
+import { PORT } from "./config";
+
 
 
 //const routesindex = require("./routes/product");
@@ -23,7 +25,9 @@ import indexRoutes from "./routes/index";
 
 //Settings
 
-app.set("port", 3000);
+app.set("port", PORT);
+//Another way to config the port
+//app.listen(PORT)
 
 app.set('views', path.join(__dirname,'views'))
 

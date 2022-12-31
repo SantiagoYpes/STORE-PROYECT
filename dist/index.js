@@ -7,6 +7,7 @@ require("./db");
 var _morgan = _interopRequireDefault(require("morgan"));
 var _expressHandlebars = require("express-handlebars");
 var _index = _interopRequireDefault(require("./routes/index"));
+var _config = require("./config");
 /*
 This Import is used to try the another way to config hbs
 import exphbs from "express-handlebars"
@@ -22,7 +23,10 @@ var app = (0, _express["default"])();
 
 //Settings
 
-app.set("port", 3000);
+app.set("port", _config.PORT);
+//Another way to config the port
+//app.listen(PORT)
+
 app.set('views', _path["default"].join(__dirname, 'views'));
 
 /*
