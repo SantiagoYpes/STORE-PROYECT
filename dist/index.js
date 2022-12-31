@@ -5,7 +5,6 @@ var _express = _interopRequireDefault(require("express"));
 var _path = _interopRequireDefault(require("path"));
 require("./db");
 var _morgan = _interopRequireDefault(require("morgan"));
-var _config = require("./config");
 var _expressHandlebars = require("express-handlebars");
 var _index = _interopRequireDefault(require("./routes/index"));
 /*
@@ -23,7 +22,7 @@ var app = (0, _express["default"])();
 
 //Settings
 
-app.set("port", _config.PORT);
+app.set("port", 3000);
 app.set('views', _path["default"].join(__dirname, 'views'));
 
 /*
