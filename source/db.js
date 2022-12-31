@@ -9,8 +9,8 @@ import {URI} from "./config"
         const db = await mongoose.connect(URI)
         console.log("DB connected", db.connection.name )
     }
-    catch{
-        console.error("No db Connection")
+    catch (error){
+        console.error(error)
     }
     
 })()

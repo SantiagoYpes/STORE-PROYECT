@@ -26,7 +26,7 @@ var _config = require("./config");
         case 8:
           _context.prev = 8;
           _context.t0 = _context["catch"](0);
-          console.error(error);
+          console.error(_context.t0);
         case 11:
         case "end":
           return _context.stop();
