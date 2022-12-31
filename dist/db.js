@@ -17,7 +17,7 @@ var _config = require("./config");
           _context.prev = 0;
           _mongoose["default"].set('strictQuery', true);
           _context.next = 4;
-          return _mongoose["default"].connect(_config.URI);
+          return _mongoose["default"].connect(_config.MONGODB_URI);
         case 4:
           db = _context.sent;
           console.log("DB connected", db.connection.name);
