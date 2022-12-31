@@ -10,7 +10,7 @@ import {URI} from "./config"
         console.log("DB connected", db.connection.name )
     }
     catch{
-        console.error("error")
+        console.error(error)
     }
     
 })()
