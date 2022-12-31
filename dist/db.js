@@ -16,21 +16,22 @@ var _config = require("./config");
         case 0:
           _context.prev = 0;
           _mongoose["default"].set('strictQuery', true);
-          _context.next = 4;
+          console.log(_config.URI);
+          _context.next = 5;
           return _mongoose["default"].connect(_config.URI);
-        case 4:
+        case 5:
           db = _context.sent;
           console.log("DB connected", db.connection.name);
-          _context.next = 11;
+          _context.next = 12;
           break;
-        case 8:
-          _context.prev = 8;
+        case 9:
+          _context.prev = 9;
           _context.t0 = _context["catch"](0);
           console.error(_context.t0);
-        case 11:
+        case 12:
         case "end":
           return _context.stop();
       }
     }
-  }, _callee, null, [[0, 8]]);
+  }, _callee, null, [[0, 9]]);
 }))();

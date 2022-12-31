@@ -6,6 +6,7 @@ import {URI} from "./config"
 (async ()=>{
     try{
         mongoose.set('strictQuery', true)
+        console.log(URI)
         const db = await mongoose.connect(URI)
         console.log("DB connected", db.connection.name )
     }
