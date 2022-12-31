@@ -7,7 +7,8 @@
     "app": "nodemon source/index.js --exec babel-node",
     "dev": "nodemon source/index.js --exec babel-node",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel source -d dist && ncp source/views dist/views && ncp source/public dist/public"
+    "build": "babel source -d dist && ncp source/views dist/views && ncp source/public dist/public",
+    "start": "node dist/index.js"
   },
   "author": "Santiago Yepes",
   "license": "ISC",
