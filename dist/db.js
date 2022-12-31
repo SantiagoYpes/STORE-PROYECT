@@ -23,10 +23,7 @@ var _config = require("./config");
           console.log("DB connected", db.connection.name);
           _context.next = 11;
           break;
-        case 8:
-          _context.prev = 8;
-          _context.t0 = _context["catch"](0);
-          console.error(error);
+        
         case 11:
         case "end":
           return _context.stop();
